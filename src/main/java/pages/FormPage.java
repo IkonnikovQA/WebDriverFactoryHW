@@ -10,28 +10,28 @@ import org.slf4j.LoggerFactory;
 public class FormPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(FormPage.class);
 
-    @FindBy(xpath = "//input[@id='username']")
+    @FindBy(css = "#username")
     private WebElement usernameField;
 
-    @FindBy(xpath = "//input[@id='email']")
+    @FindBy(css = "#email")
     private WebElement emailField;
 
-    @FindBy(xpath = "//input[@id='password']")
+    @FindBy(css = "#password")
     private WebElement passwordField;
 
-    @FindBy(xpath = "//input[@id='confirm_password']")
+    @FindBy(css = "#confirm_password")
     private WebElement confirmPasswordField;
 
-    @FindBy(xpath = "//input[@id='birthdate']")
+    @FindBy(css = "#birthdate")
     private WebElement birthDateField;
 
-    @FindBy(xpath = "//select[@id='language_level']")
+    @FindBy(css = "#language_level")
     private WebElement languageLevelField;
 
-    @FindBy(xpath = "//input[@type='submit']")
+    @FindBy(css = "input[type=submit]")
     private WebElement submitButton;
 
-    @FindBy(xpath = "//div[@id='output']")
+    @FindBy(css = "div#output")
     private WebElement resultDiv;
 
     public FormPage(WebDriver driver) {

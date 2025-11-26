@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import static org.junit.jupiter.api.Assertions.*;
+import static pages.BasePage.FORM_URL;
 
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -14,7 +15,7 @@ public class FormTest {
     private static final Logger logger = LoggerFactory.getLogger(FormTest.class);
     private WebDriver driver;
     private FormPage formPage;
-    private static final String FORM_URL = "https://otus.home.kartushin.su/form.html";
+
 
     @BeforeEach
     public void setUp() {

@@ -10,10 +10,11 @@ import org.slf4j.LoggerFactory;
 import java.time.Duration;
 
 
-public class BasePage {
+public abstract class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected static final Logger logger = LoggerFactory.getLogger(BasePage.class);
+    public static final String FORM_URL = "https://otus.home.kartushin.su/form.html";
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
